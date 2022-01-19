@@ -13,5 +13,8 @@ public class AddressMain {
                                         .setNumber("555-4321")
                                         .setType(Person.PhoneType.HOME))
                         .build();
+
+
+        System.out.println(john);
     }
 }
