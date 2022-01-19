@@ -3,8 +3,7 @@ import com.example.tutorial.protos.Person;
 
 public class AddressMain {
     public static void main(String[] args) {
-        Person john =
-                Person.newBuilder()
+        Person john = Person.newBuilder()
                         .setId(1234)
                         .setName("John Doe")
                         .setEmail("jdoe@example.com")
