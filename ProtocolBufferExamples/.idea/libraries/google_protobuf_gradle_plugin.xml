@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="google.protobuf.gradle.plugin" type="repository">
+    <properties maven-id="com.google.protobuf:protobuf-gradle-plugin:0.8.8" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/protobuf-gradle-plugin-0.8.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-18.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/osdetector-gradle-plugin-1.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/os-maven-plugin-1.4.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/maven-plugin-api-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/maven-model-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/maven-artifact-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.sisu.plexus-0.0.0.M5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cdi-api-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsr250-api-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.inject-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sisu-guice-3.1.0-no_aop.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.sisu.inject-0.0.0.M5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/plexus-component-annotations-1.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/plexus-classworlds-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/plexus-utils-3.0.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
