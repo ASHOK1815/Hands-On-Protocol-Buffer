@@ -13,6 +13,8 @@ import java.io.PrintStream;
 class AddPerson {
 
     static Person PromptForAddress(BufferedReader stdin, PrintStream stdout) throws IOException {
+
+
         Person.Builder person = Person.newBuilder();
 
         stdout.print("Enter person ID: ");
@@ -58,6 +60,11 @@ class AddPerson {
 
     public static void main(String[] args) throws Exception {
 
+        if (args.length != 1) {
+            System.err.println("Usage:  ADDRESS_BOOK_FILE");
+            System.exit(-1);
+        }
+
 
         AddressBook.Builder addressBook = AddressBook.newBuilder();
 
@@ -66,6 +73,7 @@ class AddPerson {
             FileInputStream input = new FileInputStream(args[0]);
             try {
                 addressBook.mergeFrom(input);
+
             } finally {
                 try { input.close(); } catch (Throwable ignore) {}
             }
@@ -85,5 +93,38 @@ class AddPerson {
         } finally {
             output.close();
         }
+
+
+
+
+//        // Read the existing address book.
+//        AddressBook addressBook =
+//                AddressBook.parseFrom(new FileInputStream(args[0]));
+
+
+
+        for (Person person: addressBook.getPeopleList()) {
+            System.out.println("Person ID: " + person.getId());
+            System.out.println("  Name: " + person.getName());
+            if (!person.getEmail().isEmpty()) {
+                System.out.println("  E-mail address: " + person.getEmail());
+            }
+
+            for (Person.PhoneNumber phoneNumber : person.getPhonesList()) {
+                switch (phoneNumber.getType()) {
+                    case MOBILE:
+                        System.out.print("  Mobile phone #: ");
+                        break;
+                    case HOME:
+                        System.out.print("  Home phone #: ");
+                        break;
+                    case WORK:
+                        System.out.print("  Work phone #: ");
+                        break;
+                }
+                System.out.println(phoneNumber.getNumber());
+            }
+        }
+
     }
 }
