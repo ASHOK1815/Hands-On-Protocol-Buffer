@@ -1,0 +1,44 @@
+syntax ="proto3";
+
+
+package ashok.protobufexample.employee;
+
+option java_multiple_files = true;
+option java_outer_classname = "CustomerProto";
+option java_package = "com.example.protobuff";
+
+
+
+message Employee{
+
+  int32 emp_id = 1;
+  int32 salary = 2;
+  string name  = 3;
+  string address = 4;
+  string department = 5;
+  string email       = 6;
+  int32 age  = 7;
+
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+
+  message PhoneNumber {
+    string number = 1;
+    PhoneType type = 2;
+  }
+
+  repeated PhoneNumber phones = 8;
+
+}
+
+
+
+message EmployeeList{
+  repeated Employee employee = 1;
+}
+
+
+
