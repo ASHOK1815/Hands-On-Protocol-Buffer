@@ -1,0 +1,20 @@
+syntax ="proto3";
+
+package tutorial;
+
+option java_multiple_files = true;
+option java_package = "com.example.tutorial.protos.Students";
+option java_outer_classname = "StudentsProtos";
+
+message StudentInfo{
+  string first_Name   = 1;
+  string last_Name    = 2;
+  int32  roll_Number  = 3;
+  double cgpa         = 4;
+
+}
+
+message Students{
+  repeated StudentInfo student = 1;
+}
+
