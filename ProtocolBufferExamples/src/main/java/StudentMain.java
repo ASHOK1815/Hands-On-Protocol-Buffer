@@ -1,4 +1,3 @@
-
 import proto.example.Schema.Students;
 import com.example.tutorial.protos.Students.StudentInfo;
 
@@ -11,17 +10,17 @@ import java.util.ArrayList;
 public class StudentMain {
 
 
-
     public static void main(String[] args) throws IOException {
+
         BufferedReader stdin =new BufferedReader(new InputStreamReader(System.in));
         ArrayList<StudentInfo.Builder> arrayList = new ArrayList<>();
 
         StudentInfo.Builder studentInfo = StudentInfo.newBuilder();
         Students.Builder studenT = Students.newBuilder();
-        studentInfo.setFirstName("Ashok")
-                .setLastName("kumawat")
-                .setCgpa(8.85)
-                .setRollNumber(6735);
+        studentInfo .setFirstName("Ashok")
+                    .setLastName("kumawat")
+                    .setCgpa(8.85)
+                    .setRollNumber(6735);
 
         StudentInfo message=studentInfo.build();
         studentInfo.setFirstName("Ashok")
