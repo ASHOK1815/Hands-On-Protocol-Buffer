@@ -33,6 +33,14 @@ public class StudentMain {
         arrayList.add(0,message.toBuilder());
         arrayList.add(1,studentInfo);
 
+
+        System.out.println("Fields");
+        System.out.println(studentInfo.getAllFields());
+        System.out.println("descriptor");
+        System.out.println(studentInfo.getDescriptorForType());
+
+        System.out.println();
+
         System.out.println(arrayList.toString());
     }
 }
