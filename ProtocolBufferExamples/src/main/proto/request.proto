@@ -21,3 +21,4 @@ message SearchRequest {
   }
   Corpus corpus = 4;
 }
+
