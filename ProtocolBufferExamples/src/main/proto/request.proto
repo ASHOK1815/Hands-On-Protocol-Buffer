@@ -1,8 +1,8 @@
 syntax ="proto3";
 
 option java_multiple_files = true;
-option  java_package = "proto.example.Schema.Request";
-option java_outer_classname = "SchemaProtos.Request";
+option  java_package = "Schema.SearchRequestPackage";
+option java_outer_classname = "RequestClass";
 
 
 
